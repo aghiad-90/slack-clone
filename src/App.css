@@ -1,3 +1,26 @@
-* {
-  margin: 0;
+body {
+  --slack-color: #3f0f40;
+  --header-search: #421f44;
+  --slack-darker: #340e36;
+  overflow: hidden;
+}
+
+.App__body {
+  display: flex;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--slack-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--slack-darker);
 }
